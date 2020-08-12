@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>load page by zdraste</title>
+</head>
+<body class="body_background">
+
+</body>
+</html>
+<style>
+	.body_background{
+		background-image: url(https://images6.alphacoders.com/910/thumb-1920-910972.png);
+		background-size: cover;
+		transition: 1s ;
+	}
+</style>
+<script>
+	function getRandomInt(max) {
+	  return Math.floor(Math.random() * Math.floor(max));
+	}
+
+	let string = [
+		"https://images6.alphacoders.com/910/thumb-1920-910972.png",
+		"https://images3.alphacoders.com/105/thumb-1920-1053009.jpg",
+		"https://images5.alphacoders.com/881/thumb-1920-881764.jpg",
+		//"https://images5.alphacoders.com/881/thumb-1920-881764.jpg",
+		"https://images4.alphacoders.com/517/51706.jpg"
+	];
+	//document.body.style = "background-image : url(" + string[0] +");"
+	let timerId = setInterval(function(){
+		document.body.style = "background-image : url(" + string[getRandomInt(4)] +");"
+	}, 6000);
+	//timer
+</script>
